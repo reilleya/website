@@ -4,9 +4,72 @@ html(lang='en')
     title Andrew Reilley
     link(href='/styles/main.css', rel='stylesheet')
   body
-    div.header
-      h1.header Andrew Reilley
+    .header
+      .name Andrew Reilley
       hr
-      h3 MIT Class of 2019 - Course 6 (EE/CS)
-      a(href='resume.pdf') Resume
+      a(href='/about/') About
+      ||
+      a(href='/resume.pdf') Resume
+      ||
       a(href='https://www.github.com/reilleya') Github
+      ||
+      a(href='https://www.youtube.com/channel/UCKNQLHkcDU4bHDAu62lXFEg') Youtube
+
+    .projects
+      .project
+        img.real(src = '/rmts/board.jpg')
+        .name RMTS
+        .description Rocket Motor Test System is a complete test stand instrumentation system in a single compact device. Designed for solid rocket motors, it supports igntition and data collection from a pressure transducer and a load cell. The device connects to the user's computer over a radio link that is used to trigger ignition and send back results after the firing is complete.
+        a(href = '/rmts') Read More
+
+      .project
+        img.screenshot(src = '/openMotor/screenshot.png')
+        .name openMotor
+        .description openMotor is an open source internal ballistics simulator for solid rocket motor experimeters. It is a GUI application that takes in information about a motor's propellant characteristics, grain geometry, and nozzle configuration and estimates pressure, thrust and other characteristics to help the user iterate on their design. It is able to simulate the regression of arbitrary grain geometries.
+        a(href = 'https://github.com/reilleya/openMotor') Repository
+
+      .project
+        img.real(src = '/tetris/mess.jpg')
+        .name Tetris
+        .description I took MIT's 6.115 microcomputer project laboratory in the spring of 2018. My final project for the class was to build a version of Tetris entirely in 8051 assembly. The code for the project is located on my github.
+        a(href = 'https://github.com/reilleya/6.115-Tetris') Repository
+
+      .project
+        img.screenshot(src = '/emulators/pygbe.png')
+        .name Emulators
+        .description I'm currently developing an emulator for the original gameboy as a project to learn Rust. My initial work on the emulator was done in python, but I switched to Rust for performance reasons. The python version was capable of displaying game graphics and the Rust version is not too far behind.
+
+      .project
+        img.real(src = '/rocketry/arrow.png')
+        .name Rocketry
+        .description Amateur rocketry has been a passion of mine since 2010 and I have constructed and flown dozens of rockets in the past decade. I hold L3 certifications from the NAR and TRA and attend launches whenever I can.
+        a(href = '/rmts') Read More
+
+      .project
+        img.real(src = '/srm/p9100.png')
+        .name Solid Rocket Motors
+        .description As my rocketry hobby turned into an obsession, the scope of my interest (mostly) narrowed to propulsion. I've designed, built, and fired solid rocket motors up to 6" in diameter that produced as much as 3,000 lbf of thrust.
+        a(href = '/srm') Read More
+
+      .project
+        img.real(src = '/maslab/robot.jpg')
+        .name MASLAB
+        .description I spent much of January 2016 working on a robot for MIT's Mobile Autonomous Systems Lab, which is a competition that gives teams a month to build autonomous robots. The task was to locate stacks of cubes in the arena and restack them by color. I mostly worked to design and implement our computer vision system. My team took first place in the competition. Our team wiki has details about our design, and our code is available in our repository.
+
+      .project
+        img.real(src = '/pyxida/board.jpg')
+        .name Pyxida
+        .description Pyxida is the flight computer that I helped MIT's rocket team develop as the lead of the Avionics subteam. It estimates the location and orientation of a rocket and uses this information to trigger flight events while also transmitting it to a ground station.
+
+      .project
+        img.real(src = '/fractals/fractal.png')
+        .name Fractals
+        .description I've built a few tools for generating fractals. My last foray into this field was a fractal renderer that uses the parallel nature of GPU computation to rapidly render Mandelbrot and Julia sets. The calculations are done on the GPU in a shader, so the host program only needs to direct the user's inputs to the graphics card. The properties of the fractal are broken out to the user, including the equation that is iterated, which is modified at runtime by recompiling the shader.
+
+
+      .project
+        img.real(src = '/tdml/screenshot.png')
+        .name TDML
+        .description I wrote a basic 3D game engine in C++ using OpenGL. This was the project that I used to teach myself OpenGL, and the original version was written using immediate mode and the fixed function pipeline. As the project progressed, I transitioned it to use modern OpenGL features such as VBOs, VAOs, and shaders. I've learned a lot since I developed TDML, but the repository for the project is still hosted here for historical purposes.
+
+

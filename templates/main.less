@@ -1,59 +1,74 @@
-.header {
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 25px;
-    padding-bottom: 6px;
+body {
+    background-color: #FF7A1F;
+}
+
+.box {
+    margin: auto;
+    padding: 10px;
     text-align: center;
     background-color: #fafafa;
     border-radius: 6px;
     font-family: "Franklin Gothic";
+    box-shadow: 0 0 0px 5px #afafaf;
 }
 
-.header h1 {
-    font-size: 75;
-    margin-bottom: 0px;
+.header {
+    .box();
+    width: 800px;
+    margin-bottom: 20px;
+
+    .name {
+        font-size: 75px;
+        margin-bottom: 0px;
+    }
+
+    .shortBio {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    a {
+        padding: 10px;
+    }
 }
 
-#projects h2 {
-    font-size: 37;
-    margin-bottom: 0px;
-    margin-left: 5px;
-}
 
-.content {
-    font-family: "Franklin Gothic";
-
-    background-color: #fafafa;
-    border-radius: 6px;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-}
-
-.content p {
-    padding-right: 10px;
-}
-
-#projects img {
-    width:auto;
-    height:200px;
-    border-radius: 6px;
-    margin-left: 5px;
-    margin-right: 10px;
-    float: left;
-}
-
-#bio {
-    text-align:center;
-    padding-top:5px;
-    padding-bottom:5px;
+.projects {
+    text-align: center;
 }
 
 .project {
-    min-height: 200px;
-}
+    .box();
+    display: inline-table;
+    margin: 15px;
+    width: 850px;
 
-body {
-    background-color: #FF7A1F;
+    .name {
+        font-size: 25px;
+        padding-bottom: 6px;
+        font-weight: bold;
+    }
+
+    .description {
+        padding: 5px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    a {
+
+    }
+
+    img {
+        float: left;
+        width:auto;
+        height:200px;
+        margin-right: 20px;
+        &.real {
+            border-radius: 6px;
+        }
+        &.screenshot {
+
+        }
+    }
 }

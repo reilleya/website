@@ -9,8 +9,12 @@ clean = function () {
       ]);
 }
 
+copyMedia = function() {
+    return gulp.src(['media/**/*']).pipe(gulp.dest('build'));
+}
+
 buildPug = function () {
-    return gulp.src('templates/*.pug')
+    return gulp.src('templates/**/*.pug')
       .pipe(pug())
       .pipe(gulp.dest('build'));
   };
@@ -27,4 +31,4 @@ gulp.task('pug', buildPug);
 
 gulp.task('less', buildLess);
 
-gulp.task('build', gulp.series(clean, buildPug, buildLess));
+gulp.task('build', gulp.series(clean, buildPug, buildLess, copyMedia));

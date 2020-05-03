@@ -1,5 +1,7 @@
+@bg-color: #ff7a1f;
+
 body {
-    background-color: #FF7A1F;
+    background-color: @bg-color;
 }
 
 .box {
@@ -20,6 +22,7 @@ body {
     .name {
         font-size: 75px;
         margin-bottom: 0px;
+        font-weight: bold;
     }
 
     .shortBio {
@@ -56,13 +59,13 @@ body {
     }
 
     a {
-
+        margin: 10px;
     }
 
     img {
         float: left;
         width:auto;
-        height:200px;
+        height:250px;
         margin-right: 20px;
         &.real {
             border-radius: 6px;
@@ -71,4 +74,39 @@ body {
 
         }
     }
+}
+
+.detailBox {
+    .box();
+    width: 80%;
+
+    .name {
+        font-size: 25px;
+        padding-bottom: 6px;
+        font-weight: bold;
+    }
+
+    .description {
+        padding: 5px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    a {
+        margin: 10px;
+    }
+
+    img {
+        float: left;
+        width:auto;
+        height:250px;
+        margin-right: 20px;
+        &.real {
+            border-radius: 6px;
+        }
+        &.screenshot {
+
+        }
+    }
+
 }

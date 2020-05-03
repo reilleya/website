@@ -17,7 +17,7 @@ html(lang='en')
 
     .projects
       .project
-        img.real(src = '/rmts/board.jpg')
+        img.real(src = '/rmts/board_small.jpg')
         .name RMTS
         .description Rocket Motor Test System is a complete test stand instrumentation system in a single compact device. Designed for solid rocket motors, it supports igntition and data collection from a pressure transducer and a load cell. The device connects to the user's computer over a radio link that is used to trigger ignition and send back results after the firing is complete.
         a(href = '/rmts') Read More
@@ -37,24 +37,28 @@ html(lang='en')
       .project
         img.screenshot(src = '/emulators/pygbe.png')
         .name Emulators
-        .description I'm currently developing an emulator for the original gameboy as a project to learn Rust. My initial work on the emulator was done in python, but I switched to Rust for performance reasons. The python version was capable of displaying game graphics and the Rust version is not too far behind.
+        .description After taking 6.115 I realized that I had a decent understanding of how 8 bit microprocessors work and decided to apply this knowledge by programming an emulator for the original gameboy. I started in python and got to the point where the emulator could display the tetris splash screen when I noticed that performance was going to be an issue. Rather than refactor, I started to convert the code to Rust but haven't had time to finish it yet.
+        a(href = 'https://www.github.com/reilleya/pyGBE') Python Repository
+        a(href = 'https://www.github.com/reilleya/rustBoy') Rust Repository
 
       .project
         img.real(src = '/rocketry/arrow.png')
         .name Rocketry
-        .description Amateur rocketry has been a passion of mine since 2010 and I have constructed and flown dozens of rockets in the past decade. I hold L3 certifications from the NAR and TRA and attend launches whenever I can.
-        a(href = '/rmts') Read More
+        .description Amateur rocketry has been a passion of mine since 2010 and I have constructed and flown dozens of rockets in the past decade. I have L3 certifications from the NAR and TRA and attend launches whenever I can.
+        a(href = '/rocketry') Read More
 
       .project
         img.real(src = '/srm/p9100.png')
         .name Solid Rocket Motors
-        .description As my rocketry hobby turned into an obsession, the scope of my interest (mostly) narrowed to propulsion. I've designed, built, and fired solid rocket motors up to 6" in diameter that produced as much as 3,000 lbf of thrust.
+        .description As my rocketry hobby turned into an obsession, the scope of my interest (mostly) narrowed to propulsion. While working with the MIT Rocket Team I designed, built, and fired solid rocket motors up to 6" in diameter that produced as much as 3,000 lbf of thrust.
         a(href = '/srm') Read More
 
       .project
         img.real(src = '/maslab/robot.jpg')
         .name MASLAB
-        .description I spent much of January 2016 working on a robot for MIT's Mobile Autonomous Systems Lab, which is a competition that gives teams a month to build autonomous robots. The task was to locate stacks of cubes in the arena and restack them by color. I mostly worked to design and implement our computer vision system. My team took first place in the competition. Our team wiki has details about our design, and our code is available in our repository.
+        .description I spent much of January 2016 working on a robot for MIT's Mobile Autonomous Systems Lab, which is a competition that gives teams a month to build autonomous robots. The robot had to locate stacks of cubes in the arena and restack them by color. I mostly worked to design and implement our computer vision system. My team took first place in the competition. Our team wiki has details about our design, and our code is available in our repository.
+        a(href = 'http://maslab.mit.edu/2016/wiki/team03') Wiki
+        a(href = 'https://github.com/skrub-wreckers/software') Repository
 
       .project
         img.real(src = '/pyxida/board.jpg')
@@ -66,10 +70,8 @@ html(lang='en')
         .name Fractals
         .description I've built a few tools for generating fractals. My last foray into this field was a fractal renderer that uses the parallel nature of GPU computation to rapidly render Mandelbrot and Julia sets. The calculations are done on the GPU in a shader, so the host program only needs to direct the user's inputs to the graphics card. The properties of the fractal are broken out to the user, including the equation that is iterated, which is modified at runtime by recompiling the shader.
 
-
       .project
         img.real(src = '/tdml/screenshot.png')
         .name TDML
-        .description I wrote a basic 3D game engine in C++ using OpenGL. This was the project that I used to teach myself OpenGL, and the original version was written using immediate mode and the fixed function pipeline. As the project progressed, I transitioned it to use modern OpenGL features such as VBOs, VAOs, and shaders. I've learned a lot since I developed TDML, but the repository for the project is still hosted here for historical purposes.
-
-
+        .description I wrote a basic 3D game engine in C++ using OpenGL back in highschool. This was the project that I used to teach myself OpenGL, and the original version was written using immediate mode and the fixed function pipeline. As the project progressed, I transitioned it to use modern OpenGL features such as VBOs, VAOs, and shaders. I've learned a lot since I developed TDML, but the repository for the project is still hosted here for historical purposes.
+        a(href = 'https://github.com/reilleya/tdml') Repository

@@ -1,7 +1,13 @@
 @bg-color: #ff9a56;
 
+@box-width: 825px;
+
 body {
     background-color: @bg-color;
+}
+
+a {
+    text-decoration: none;
 }
 
 .box {
@@ -18,6 +24,7 @@ body {
     .box();
     width: 800px;
     margin-bottom: 20px;
+    font-size: 24px;
 
     .name {
         font-size: 75px;
@@ -26,25 +33,28 @@ body {
     }
 
     .shortBio {
-        font-size: 25px;
+        font-size: 24px;
         margin-bottom: 0px;
     }
 
     a {
         padding: 10px;
+        font-size: 24px;
     }
 }
 
 
 .projects {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project {
     .box();
-    display: inline-table;
     margin: 15px;
-    width: 850px;
+    width: @box-width;
 
     .name {
         font-size: 25px;
@@ -65,7 +75,7 @@ body {
     img {
         float: left;
         width:auto;
-        height:250px;
+        height:275px;
         margin-right: 20px;
         &.real {
             border-radius: 6px;
@@ -73,40 +83,29 @@ body {
         &.screenshot {
 
         }
+    }
+
+    iframe {
+        float: left;
+    }
+
+    table {
+        padding-left: 50px;
+        width: 40%;
+    }
+
+    ul {
+        padding-left: 400px;
     }
 }
 
-.detailBox {
+.separatorBox {
     .box();
-    width: 80%;
+    width: @box-width;
 
     .name {
         font-size: 25px;
         padding-bottom: 6px;
         font-weight: bold;
     }
-
-    .description {
-        padding: 5px;
-        text-align: left;
-        font-size: 18px;
-    }
-
-    a {
-        margin: 10px;
-    }
-
-    img {
-        float: left;
-        width:auto;
-        height:250px;
-        margin-right: 20px;
-        &.real {
-            border-radius: 6px;
-        }
-        &.screenshot {
-
-        }
-    }
-
 }

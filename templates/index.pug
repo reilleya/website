@@ -18,9 +18,15 @@ html(lang='en')
 
     .projects
       .project
+        img.real(src = '/winder/assembled.jpg')
+        .name Filament Winder
+        .description I'm currently working on a 3-axis filament winding machine for producing composite tubes. I'm designing the hardware, writing a control application, and developing a tool path planner. I will open-source the components when they are each in a stable state.
+        a(href= 'https://cad.onshape.com/documents/a237705785f3bd6b6b328d9f/w/38eed96ef9e62482a1b2a8bf/e/467226676c717b341528fbc9?renderMode=0&uiState=6219a2e755ae5018a5b10bd7') CAD
+
+      .project
         img.real(src = '/rmts/board_small.jpg')
         .name RMTS
-        .description Rocket Motor Test System is a complete test stand instrumentation system in a single compact device. Designed for solid rocket motors, it supports igntition and data collection from a pressure transducer and a load cell. The device connects to the user's computer over a radio link that is used to trigger ignition and send back results after the firing is complete.
+        .description Rocket Motor Test System is a complete test stand instrumentation system in a single compact device. Designed for solid rocket motors, it supports ignitition and data collection from a pressure transducer and a load cell. The device connects to the user's computer over a radio link that is used to trigger ignition and send back results after the firing is complete.
         a(href = '/rmts') Read More
 
       .project
@@ -28,6 +34,12 @@ html(lang='en')
         .name openMotor
         .description openMotor is an open source internal ballistics simulator for solid rocket motor experimeters. It is a GUI application that takes in information about a motor's propellant characteristics, grain geometry, and nozzle configuration and estimates pressure, thrust and other characteristics to help the user iterate on their design. It is able to simulate the regression of arbitrary grain geometries.
         a(href = 'https://github.com/reilleya/openMotor') Repository
+
+      .project
+        img.real(src = '/srm/p9100.png')
+        .name Solid Rocket Motors
+        .description As my rocketry hobby turned into an obsession, the scope of my interest (mostly) narrowed to propulsion. While working with the MIT Rocket Team I designed, built, and fired solid rocket motors up to 6" in diameter that produced as much as 3,000 lbf of thrust. Since then, I have continued to develop my skills in this area with new formulations and designs.
+        a(href = '/srm') Read More
 
       .project
         img.real(src = '/tetris/mess.jpg')
@@ -47,12 +59,6 @@ html(lang='en')
         .name Rocketry
         .description Amateur rocketry has been a passion of mine since 2010 and I have constructed and flown dozens of rockets in the past decade. I have L3 certifications from the NAR and TRA and attend launches whenever I can.
         a(href = '/rocketry') Read More
-
-      .project
-        img.real(src = '/srm/p9100.png')
-        .name Solid Rocket Motors
-        .description As my rocketry hobby turned into an obsession, the scope of my interest (mostly) narrowed to propulsion. While working with the MIT Rocket Team I designed, built, and fired solid rocket motors up to 6" in diameter that produced as much as 3,000 lbf of thrust. Since then, I have continued to develop my skills in this area with new formulations and designs.
-        a(href = '/srm') Read More
 
       .project
         img.real(src = '/maslab/robot.jpg')

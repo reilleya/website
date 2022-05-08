@@ -2,6 +2,8 @@
 
 @box-width: 825px;
 
+@article-image-padding: 20px;
+
 body {
     background-color: @bg-color;
 }
@@ -83,6 +85,22 @@ a {
         &.screenshot {
 
         }
+        &.centered {
+            float: none;
+            height: auto;
+            padding-top: @article-image-padding;
+            padding-bottom: @article-image-padding;
+            &.halfWidth {
+                max-width: 45%;
+            }
+            &.thirdWidth {
+                max-width: 30%;
+            }
+            &.single {
+                max-height: 300px;
+                max-width: 90%;
+            }
+        }
     }
 
     iframe {
@@ -102,6 +120,7 @@ a {
 .separatorBox {
     .box();
     width: @box-width;
+    margin-top: 20px;
 
     .name {
         font-size: 25px;

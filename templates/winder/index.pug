@@ -18,22 +18,22 @@ html(lang='en')
       .project
         img.real(src = 'winding.jpg')
         .name Custom Filament Winder
-        .description A filament winder is a kind of CNC machine that makes composite tubes by wrapping a ribbon of fiber around a mandrel. Rocketry requires a lot of tubes, so it was only a matter of time before I built a machine to make them for me. My "Contraption" is a 3-axis filament winder designed to wet wind carbon fiber tow with epoxy resin. I plan to use the resulting tubes for solid rocket motor cases and bodies.
+        .description A filament winder is a kind of CNC machine that makes composite tubes by wrapping a tape of resin-coated fibers around a mandrel. Rocketry requires a lot of tubes, so it was only a matter of time before I built a machine to make them for me. My "Contraption" is a 3-axis filament winder designed to wet wind carbon fiber tow with epoxy resin. I plan to use the resulting tubes for solid rocket motor cases and bodies.
 
       .project
         img.real(src = 'nice_tube.jpg')
         .name Results
-        .description I've been quite pleased with the tubes coming off of the machine. They are smooth, lightweight, and have withstood over 1000 PSI in a hydrostatic test. 
+        .description I've been quite pleased with the tubes coming off of the machine. They are smooth, lightweight, and have withstood thousands of PSI of pressure in hydrostatic tests.
 
       .project
         img.real(src = 'cad.png')
         .name Hardware
-        .description To allow rapid iteration on the design, the machine includes many off-the-shelf parts and the only fabrication technique needed is 3D printing. The CAD isn't the cleanest, but everything you'd need to print and buy to build your own machine is included and it shouldn't be too hard to figure out.
+        .description To allow rapid iteration on the design, the machine includes many off-the-shelf parts and the only fabrication technique needed is 3D printing. The CAD isn't the cleanest, but everything you'd need to print and buy to build your own machine is included and it shouldn't be too hard to figure out how it goes together.
         a(href= 'https://cad.onshape.com/documents/a237705785f3bd6b6b328d9f/w/38eed96ef9e62482a1b2a8bf/e/467226676c717b341528fbc9?renderMode=0&uiState=6219a2e755ae5018a5b10bd7') CAD
 
       .project
         .name Software
-        .description Software for running the winder is a minimal node.js script. It is currently a command-line tool, though I might add a UI in the future. There are three command line options provided: one for turning a wind definition file into gcode, one to plot the gcode for visualization and debugging, and one for streaming the gcode to the control board to run it.
+        .description Software for running the winder is a minimal node.js script. It is currently a command-line tool, though I might add a GUI in the future. There are three command line options provided: one for turning a wind definition file into gcode, one to plot the gcode for visualization and debugging, and one for streaming the gcode to the control board to run it.
         a(href = 'https://github.com/reilleya/cyclone') Software
 
       .project

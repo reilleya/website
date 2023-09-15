@@ -1,0 +1,48 @@
+doctype html  
+html(lang='en')  
+  head
+    title Test Stand Design
+    link(href='/styles/srm.css', rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap", rel="stylesheet")
+  body
+    .header
+      .name Test Stand Design
+      hr
+      a(href='../') Solid Rocket Motors
+      ||
+      a(href='../../rocketry') Rocketry
+      ||
+      a(href='../../rmts') RMTS
+
+    .separatorBox
+      .name My thoughts on how to design a test stand for firing solid rocket motors
+    .projects
+      .project
+        .name Design Objectives
+
+        .description Static firing rocket motors is essential to verifying their design and performance, and a carefully-designed structure for containing the motor is, in turn, required to do so safely and efficiently. As with any engineering challenge, there are multiple possible solutions, each with their own benefits and costs. On this page, I explore some of the choices that go into a solid rocket motor test stand, and document my own design.
+
+        .description The primary concern when designing a test stand should always be safety. Though solid rocket motors should only ever be fired far away from any living things or property that could be damaged, that does not excuse a sloppy stand. A malfunctioning motor in a poorly-designed stand could still lead to an unsafe situation. To that end, a stand's primary requirement is to contain the motor in any nominal or off-nominal outcome. This means using proper materials that can handle the maximum temperatures and forces a motor could produce, and considering all possible outcomes of the test and making sure that the design will still perform in all of them. What happens if the nozzle fails? What about the forward closure?
+
+        .description Adjustability is often another requirement. Most motor builders fire multiple diameters and lengths of motors, and you don't want to have to build a new stand for each size. Building your stand to support more than one casing usually pays off. There are two dimensions that the stand might have to be adjustable in: motor diameter and motor length. Diameter adjustment can usually be implemented with a clamping mechanism, while length adjustment is often accomplished by making the stand as long as the longest motor intended for use in it and including spacers for shorter ones (usually for stands with small length ranges), by having the clamping mechanisms able to slide to different lengths, or by having the length-dependent components of the stand easily interchangeable.
+
+        .description Portability is another consideration for the majority of test stands. Very few motor builders are lucky enough to have a space dedicated for their static firing, so the test stand must be portable. This is directly opposed to the safety requirement of not moving during the motor firing, so a typical test stand design will include some number of stakes or tie-down points to hold it to the ground. For a test stand that orients the motor nozzle-up, these stakes just need to be able to resist whatever off-axis forces are produced during a failure, while for a a nozzle-down or horizontal stand, the stakes will have to stand up to the full force produced by the motor. It might be very challenging to adequately stake a horizontal stand to frozen or very loose ground, so consider your test site when deciding motor orientation.
+
+    .projects
+      .project
+        .name My Test Stand
+
+        img.centered.single(src = 'thumbnail.png')
+        
+        br
+
+        a(href='https://cad.onshape.com/documents/1a1acea98e9ab1712941c3b7/w/338c0cdce41a4348f70aa555/e/ee2360a474ff3f8296a14f73?renderMode=0&uiState=6505de3cb0d0573d058ef9f1') CAD
+
+        .description I mostly fire motors in the 2-4" OD range, and test them in New England, where the ground is often frozen enough for stakes to be challenging to drive in. Based on these constraints, my test stand is a vertical design (to minimize staking requirements) that is adjustable in both length and diameter. It was also designed to be fairly cheap and very easy to (re)build, as motor failures are usually not kind of stands.
+
+        .description It includes a heavy, 0.375" thick steel base plate with holes drilled in it for stakes. Connected to the base plate with right-angle sheet metal brackets is a short piece of 7.5" OD, 0.25" wall 6061 aluminum tubing with 6 0.375" diameter holes evenly spaced around the circumference. Half of these holes are for the brackets that anchor the ring to the base plate, and the other 3 are where the vertical elements connect, which are pieces of low-profile aluminum unistrut cut to be slightly longer than the motor. <Al unistrut is cheap enough that I have a few sets in different length ranges. For fine adjustment, I just use a spacer below the motor> These vertical elements are connected to the ring using long bolts that allow them to slide in and out and clamp to motors of different diameters. The other end of the unistrut is attached to an indentical ring in the same way, and the other holes in this upper ring have forged eye bolts installed. When firing motors much over a foot in length, I use these eyebolts to attach ratchet straps that run to stakes driven into the ground 3-10 feet away from the base of the stand.
+
+        img.real.centered.halfWidth(src = 'transducer.jpg')
+        img.real.centered.halfWidth(src = 'transducer_in_stand.jpg')
+
+        .description I nearly always collect both pressure and force data from my motors, which this stand design accommodates well. I use button-style load cells, which are placed directly on the steel base plate, and, as they are usually smaller in diameter than the motor being fired, centered using a 3D printed ring with the same OD as the motor. For connecting the pressure transducer, all of my forward closures have a 1/8th inch NPT pressure tap in the center, into which I install a 1-2" long piece of pipe that is packed with grease to insulate the transducer. The other end of the pipe is connected to a T fiting with a plug in the opposite end. The plug will be what rests on the load cell and transfers thrust. The pressure transducer is screwed into the other opening on the fitting, sticking out perpendicular to the motor.

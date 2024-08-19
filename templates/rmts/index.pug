@@ -17,7 +17,7 @@ html(lang='en')
     .projects
       .project
         .name DAQ and ignition system for solid rocket motors
-        .description RMTS is a complete set of test stand electronics in a single board for amateur motor builders. It was designed to be a simple and safe way to ignite solid rocket motors and collect data from their firing to enable hobbyists to make informed decisions as they iterate on their propellant formulas and motor designs. It is similar in complexity to a standard rocketry altimeter and doesn't require any special skills to use. It is a standalone unit meaning you don't need to leave a computer near the motor. As it is specialized for rocketry, it displays thrust and pressure curves immediately after the firing without needing to pass the data through a spreadsheet. The built in wireless ignition channel reduces the number of devices you need to set up to one and allows you to measure the motor's startup transient as logging begins when the igniter fires.
+        .description RMTS is a complete set of test stand electronics in a compact device for amateur motor builders. It was designed to be a simple and safe way to ignite solid rocket motors and collect data from their firing to enable hobbyists to make informed decisions as they iterate on their propellant formulas and motor designs. It is similar in complexity to a standard rocketry altimeter and doesn't require any special skills to use. It is a standalone unit, meaning you don't need to leave a computer near the motor. As it is specialized for rocketry, it displays thrust and pressure curves immediately after the firing without needing to pass the data through a spreadsheet. The built in wireless ignition channel reduces the number of devices you need to set up to one and allows you to measure the motor's startup transient as logging begins when the igniter fires.
 
       .project
         img.real(src = 'board_small.jpg')
@@ -26,9 +26,8 @@ html(lang='en')
           ul
             li Records two 24 bit channels at 150hz, intended for a load cell and a pressure transducer.
             li Stores data to microSD card for practically unlimited recording time.
-            li License-free radio, tested to 500'.
-            li Powered over USB, simply connect to backup battery.
-            li Separate battery for pyro channel.
+            li License-free radio, tested to 500' (but should work at much greater).
+            li Powered by a single 2S LiPo, able to fire e-matches and higher current igniters.
 
       .project
         img.screenshot(src = 'screenshot.png')
@@ -40,7 +39,7 @@ html(lang='en')
             li Remotely fires motors in a few clicks.
             li Shows thrust/pressure curves as they are streamed back.
             li Displays statistics including ISP, c*, and startup time.
-            li Exports to CSV and ENG formats
+            li Exports to CSV and ENG formats.
 
       .project
         .name Manual
@@ -50,7 +49,8 @@ html(lang='en')
 
       .project
         .name Acquiring a system
-        .description This project is entirely open source, which means anyone can build their own RMTS based on the code and board layouts hosted on github. Links to relevant repositories are below. I do plan to offer assembled systems for sale as soon as chip availability improves, for those who want a turnkey solution.
+        .description I offer fully assembled systems on my store page linked below. This project is entirely open source, which means anyone can build their own RMTS based on the code and board layouts hosted on github. Links to relevant repositories are also below for those who would want to DIY it.
+        a(href = 'https://store.reilley.net') Store
         a(href = 'https://github.com/reilleya/RMTS-Hardware') Hardware
         a(href = 'https://github.com/reilleya/RMTS-Firmware') Firmware
         a(href = 'https://github.com/reilleya/RMTS-Software') Software
